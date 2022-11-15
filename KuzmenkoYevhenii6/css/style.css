@@ -1,45 +1,48 @@
 .wrapper {
-    background-color: #FAF0E6;
-    width: 100%;
+    width: 100%; /* Задаю ширину страницы */
+    background-color: #FAF0E6; /* Задаю основной цвет страницы */
+    
 }
 
-.header {
-    display: flex;
+.header { /* Задаю flex метод для того, чтобы в шапке сайта разместить logo и menu*/
+    display: flex; 
     flex-direction: row;
     justify-content: space-around;
 }
 
-.header__logo {
-    padding: 1%;
+.header__logo { /* Задаю отступ для лого сайта */
+    padding: 1%; 
 }
 
-.fixed__link {
-    position: fixed;
+.fixed__link { /* Задаю фиксированное позиционирование, отступ от вверха, делаю его блоком.  */
+    position: fixed; 
     display: block;
     top: 70%;
 }
 
-.menu__main {
-    padding:25px;
+.menu { /* Задаю позиционирование для моего меню. */
+    position: relative;
+    display: inline-block;
+}
+
+.menu__main { /* Задаю нужное расположение моего меню, округление углов, задний фон и цвет букв. */
+    padding: 25px; 
     margin-top: 75px;
     margin-right: 220px;
-    cursor: pointer;
     font-size: 1.2rem;
     border: none;
     border-radius: 25px;
     background-color: #00aeef;
     color: aliceblue;
 }
-.menu {
-    position: relative;
-    display: inline-block;
-}
+
 .menu-child {
     display: none;
     min-width: 200px;
     border-radius: 25px;
     background-color: #00aeef;
 }
+
 .menu-child a {
     display: block;
     font-size: 1.2rem;
@@ -47,6 +50,7 @@
     padding: 20px;
     text-decoration: none;
 }
+
 .menu:hover .menu-child {
     display: block;
     position: absolute;
@@ -70,18 +74,15 @@
     font-size: 1.8rem;
 }
 
-.article__main {
+.article__main,
+.article__picture {
     padding: 2%;
     font-size: 1.2rem;
 }
 
 .article__text {
-    padding: 10%;
+    padding: 8%;
     font-size: 1.4rem;
-}
-
-.article__picture {
-    padding: 2%;
 }
 
 .form {
@@ -97,40 +98,28 @@
     padding: 2%;
 }
 
-.form__submit {
-    padding: 2%;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 2px solid #66CDAA;
-}
-
-.form__submit:hover {
-    background-color: #66CDAA;
-    color: aliceblue;
-    transition: 0.5s;
-}
-
 .section {
     padding: 4%;
 }
 
-.section__button {
+.button {
     padding: 2%;
+    cursor: pointer;
     border-radius: 20px;
     text-decoration: none;
     font-size: 1.2rem;
     border: 2px solid #66CDAA;
 }
 
-.section__button:hover {
+.button:hover {
     background-color: #66CDAA;
     color: aliceblue;
     transition: 0.5s;
 }
 
 .picture__main {
-    margin: 20% 30%;
     width: 55%;
+    margin: 20% 30%;
     padding: 2%;
     border-radius: 25px;
     border: 2px solid #66CDAA;
