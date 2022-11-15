@@ -67,6 +67,7 @@
 }
 
 .article__title { /* Выравнивание текста, увеличил размер и толщину. */
+    padding: 1%;
     text-align: center;
     font-weight: 800;
     font-size: 1.8rem;
@@ -79,7 +80,7 @@
 }
 
 .article__text { /* Для статьи задал необходимый отступ, увеличил размер шрифта. */
-    padding: 8%;
+    padding: 5%;
     font-size: 1.4rem;
 }
 
