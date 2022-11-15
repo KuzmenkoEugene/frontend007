@@ -1,7 +1,6 @@
 .wrapper {
     width: 100%; /* Задаю ширину страницы */
     background-color: #FAF0E6; /* Задаю основной цвет страницы */
-    
 }
 
 .header { /* Задаю flex метод для того, чтобы в шапке сайта разместить logo и menu*/
@@ -36,14 +35,13 @@
     color: aliceblue;
 }
 
-.menu-child {
+.menu-child { /* Скрываю раздвижное меню - none, но с помощью hover при наведении оно снова появляется. Задал задний фон, округление краев. */
     display: none;
-    min-width: 200px;
     border-radius: 25px;
     background-color: #00aeef;
 }
 
-.menu-child a {
+.menu-child a { /* Стилизировал раздвижное меню, теперь ссылки ведут себя как блоки с помощью display:block для того, чтобы получить раздвижное меню. */
     display: block;
     font-size: 1.2rem;
     color: white;
@@ -51,58 +49,58 @@
     text-decoration: none;
 }
 
-.menu:hover .menu-child {
+.menu:hover .menu-child { /* При наведении курсора на "Меню" выскакивает раздвижное меню с помощью hover. */
     display: block;
     position: absolute;
 }
 
-.main {
+.main { /* С помощью flex блоки внутри main получили нужное мне расположение, задал ширину для main, задал нужный цвет текста. */
     display: flex;
     flex-direction: row;
     width: 100%;
     color: #35411d;
 }
 
-.article {
+.article { /* Для блока задал нужную мне ширину и отступ. */
     width: 40%;
     padding: 5%;
 }
 
-.article__title {
+.article__title { /* Выравнивание текста, увеличил размер и толщину. */
     text-align: center;
     font-weight: 800;
     font-size: 1.8rem;
 }
 
 .article__main,
-.article__picture {
+.article__picture { /* Картинки и текст получили отступ, увеличил шрифт. */
     padding: 2%;
     font-size: 1.2rem;
 }
 
-.article__text {
+.article__text { /* Для статьи задал необходимый отступ, увеличил размер шрифта. */
     padding: 8%;
     font-size: 1.4rem;
 }
 
-.form {
+.form { /* Стилизировал блок с формами, задал необходимые отступы, рамку и её цвет. */
     margin: 2%;
     padding: 5%;
     border: 2px solid #66CDAA;
     border-radius: 25px;
 }
 
-.form__item {
+.form__item { /* С помощью flex формы стали по центру, задал необходимый отступ между ними. */
     display: flex;
     justify-content: center;
     padding: 2%;
 }
 
-.section {
+.section { /* Задал отступ для блока. */
     padding: 4%;
 }
 
-.button {
+.button { /* Стилизировал кнопку, задал необходимый отступ, для кнопки "отправить" добавил pointer. */
     padding: 2%;
     cursor: pointer;
     border-radius: 20px;
@@ -111,13 +109,13 @@
     border: 2px solid #66CDAA;
 }
 
-.button:hover {
+.button:hover { /* При наведении курсора мыши меняется плавно цвет моей кнопки. */
     background-color: #66CDAA;
     color: aliceblue;
     transition: 0.5s;
 }
 
-.picture__main {
+.picture__main { /* Задал нужный размер картинке, необходимые отступы, бордеру округлил углы и добавил им подходящий цвет. */
     width: 55%;
     margin: 20% 30%;
     padding: 2%;
@@ -125,7 +123,7 @@
     border: 2px solid #66CDAA;
 }
 
-.footer {
+.footer { /* Выравнивание текста с помощью flex, задал нужный отступ, чтобы нижний блок сделать выше, задал цвет фону и тексту. */
     display: flex;
     justify-content: center;
     padding: 1.5%;
