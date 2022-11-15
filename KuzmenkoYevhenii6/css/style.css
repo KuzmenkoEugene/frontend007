@@ -84,6 +84,32 @@
     padding: 2%;
 }
 
+.form {
+    margin: 2%;
+    padding: 5%;
+    border: 2px solid #66CDAA;
+    border-radius: 25px;
+}
+
+.form__item {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.form__submit {
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid #66CDAA;
+}
+
+.form__submit:hover {
+    background-color: #66CDAA;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
 .section {
     padding: 4%;
 }
