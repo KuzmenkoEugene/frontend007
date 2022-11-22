@@ -1,0 +1,136 @@
+/* RESET CSS */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BODY */
+
+.wrapper {
+    background-color: #e1e3e2;
+}
+
+.menu__link,
+.menu__item,
+.logo__link {
+    text-transform: capitalize;
+}
+
+/* HEADER */
+
+.header,
+.footer {
+    background-color: #b3b3b3;
+}
+
+.header,
+.menu-wrap,
+.menu,
+.logo,
+.logo__link,
+.logo__picture-wrap,
+.section__tittle,
+.article__tittle,
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo__picture-wrap {
+    width: 100%;
+}
+
+.logo__picture {
+    width: 60%;
+    padding: 2%;
+}
+
+.logo__link {
+    width: 40%;
+    font-size: 3rem;
+}
+
+.menu-wrap {
+    width: 50%;
+    border: 1px solid rgb(230, 14, 194);
+}
+
+.menu {
+    width: 60%;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: #fcf3c8;
+    border: 1px solid green;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link,
+.submenu__link {
+    display: inline-block;
+    padding: 20px;
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 1.5rem;
+    background-color: #9fcdda;
+    color: black;
+    border-radius: 5px;
+    transition: 0.4s all;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.menu__item:hover .submenu {
+    display: block;
+}
+
+.menu__link:hover,
+.submenu__link:hover {
+    background-color: #fbdde5;
+    transition: 0.4s all;
+}
+
+.section {
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+.footer__item {
+    padding: 1%;
+    font-size: 1.4rem;
+}
+
+
